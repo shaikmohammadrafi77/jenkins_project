@@ -4,12 +4,12 @@ pipeline {
         EC2_USER = 'ec2-user'
         EC2_HOST = '13.201.103.121'
         SSH_CREDENTIALS = 'jenkins-id'
-        APP_DIR = '/home/ec2-user/bug_tracker'
+        APP_DIR = '/home/ec2-user/jenkins_project'
     }
     stages {
         stage('clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/shaikmohammadrafi77/CustomE-BugTracker.git'
+                git branch: 'main', url: 'https://github.com/shaikmohammadrafi77/jenkins_project.git'
             }
         }
         stage('build & test') {

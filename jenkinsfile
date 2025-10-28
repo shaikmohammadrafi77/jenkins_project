@@ -4,7 +4,7 @@ pipeline{
 	    EC2_USER = 'ec2-user'
 	    EC2_HOST = '43.204.150.85'
 	    SSH_CREDENTIALS = 'jenkins-id'
-	    APP_DIR = '/home/ec2-user/app'
+	    APP_DIR = '/home/ec2-user/jenkin_project'
 	    REPO_URL ='https://github.com/shaikmohammadrafi77/jenkins_project.git'
 	}
 	stages{
